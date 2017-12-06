@@ -1,0 +1,30 @@
+1) select database / create database
+use mydb;
+
+2) in order your database gets displayed in the list you need to create atleast one document inside mydb(newly created database)
+db.movie.insert({"name":"tutorials point"});
+
+3) to display list of dbs
+show dbs
+
+4) To delete database
+show dbs;
+use mydb;
+db.dropDatabase()
+
+5)create collection
+db.createCollection("mycol", { capped : true, autoIndexId : true, size : 
+   6142800, max : 10000 } )
+
+6)mongo db creates collection automatically once we create document, no need to create collection explicitly
+db.tutorialspoint.insert({"name" : "tutorialspoint"})
+show collections; (to dislay list of collections)
+
+7)To drop collection
+use mydb;
+show collections;
+db.mycollection.drop();
+
+8)
+
+
